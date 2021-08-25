@@ -10,7 +10,7 @@ import kotlinx.coroutines.coroutineScope
 class RssReader internal constructor(
     private val feedLoader: FeedLoader,
     private val feedStorage: FeedStorage,
-    private val settings: Settings = Settings(setOf("https://blog.jetbrains.com/kotlin/feed/"))
+    private val settings: Settings = Settings(setOf("https://mbk-news.appspot.com/feed/"))
 ) {
     @Throws(Exception::class)
     suspend fun getAllFeeds(
